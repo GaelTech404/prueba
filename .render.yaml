@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: filament-panel
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: "apache2-foreground"
+    rootDir: .
